@@ -15,3 +15,7 @@ async def get_registration_html(request: Request):
 @router.get("/")
 async def get_index_html(request: Request):
     return templates.TemplateResponse(name="index.html", context={"request": request})
+
+@router.get("/my_cv")
+async def get_index_html(request: Request):
+    return templates.TemplateResponse(name="my_cv.html", context={"request": request})
