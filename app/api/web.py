@@ -11,7 +11,6 @@ templates = Jinja2Templates(directory="app/templates")
 async def get_registration_html(request: Request):
     return templates.TemplateResponse(name="auth.html", context={"request": request})
 
-
 @router.get("/")
 async def get_index_html(request: Request):
     return templates.TemplateResponse(name="index.html", context={"request": request})
